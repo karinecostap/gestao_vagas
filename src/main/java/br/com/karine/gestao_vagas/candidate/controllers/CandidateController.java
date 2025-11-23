@@ -5,10 +5,7 @@ import br.com.karine.gestao_vagas.candidate.useCases.CreateCandidateUseCase;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/candidate")
@@ -26,4 +23,10 @@ public class CandidateController {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
-}
+
+    @GetMapping ("/")
+    public ResponseEntity<Object> get() {
+            return ResponseEntity.badRequest().body("Oi");
+        }
+    }
+
