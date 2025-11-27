@@ -1,10 +1,9 @@
-package br.com.karine.gestao_vagas.company.useCases;
+package br.com.karine.gestao_vagas.job.useCases;
 
-import br.com.karine.gestao_vagas.company.entities.JobEntity;
+import br.com.karine.gestao_vagas.job.entities.JobEntity;
 import br.com.karine.gestao_vagas.company.repositories.CompanyRepository;
-import br.com.karine.gestao_vagas.company.repositories.JobRepository;
+import br.com.karine.gestao_vagas.job.repositories.JobRepository;
 import br.com.karine.gestao_vagas.exceptions.CompanyNotFoundException;
-import br.com.karine.gestao_vagas.exceptions.UserFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

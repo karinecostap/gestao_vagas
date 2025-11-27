@@ -1,6 +1,6 @@
-package br.com.karine.gestao_vagas.company.repositories;
+package br.com.karine.gestao_vagas.job.repositories;
 
-import br.com.karine.gestao_vagas.company.entities.JobEntity;
+import br.com.karine.gestao_vagas.job.entities.JobEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;

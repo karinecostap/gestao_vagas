@@ -1,7 +1,7 @@
-package br.com.karine.gestao_vagas.company.controllers;
+package br.com.karine.gestao_vagas.job.controllers;
 
-import br.com.karine.gestao_vagas.company.entities.JobEntity;
-import br.com.karine.gestao_vagas.company.useCases.CreateJobUseCase;
+import br.com.karine.gestao_vagas.job.entities.JobEntity;
+import br.com.karine.gestao_vagas.job.useCases.CreateJobUseCase;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,7 +18,7 @@ public class JobController {
 
     @PostMapping("/")
     public JobEntity create(@Valid @RequestBody JobEntity jobEntity){
-        return this.createJobUseCase.execute(jobEntity);
+        return createJobUseCase.execute(jobEntity);
 
     }
 }

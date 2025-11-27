@@ -1,5 +1,6 @@
-package br.com.karine.gestao_vagas.company.entities;
+package br.com.karine.gestao_vagas.job.entities;
 
+import br.com.karine.gestao_vagas.company.entities.CompanyEntity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
