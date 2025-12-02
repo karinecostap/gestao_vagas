@@ -1,17 +1,15 @@
-package br.com.karine.gestao_vagas.candidate.dto;
+package br.com.karine.gestao_vagas.company.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
-
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class AuthCandidateResponseDTO {
+public class AuthCompanyResponseDTO {
 
     private String access_token;
     private Long expires_in;

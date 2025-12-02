@@ -25,6 +25,7 @@ public class CreateCandidateUseCase {
 
         var password = passwordEncoder.encode(candidateEntity.getPassword());
         candidateEntity.setPassword(password);
+
         return this.candidateRepository.save(candidateEntity);
     }
 }
